@@ -39,24 +39,39 @@ a {
 
 .navbar li {
   margin-right: 60px;
-  color: white;
+/*   color: white;
   font-size: 1.1rem;
   font-weight: 500;
   border: 2px solid white;
   border-radius: 5px;
-  padding: 8px 12px;
+  padding: 8px 12px; */
   cursor: pointer;
   min-width: fit-content;
 }
 
-.navbar li:hover {
+/* .navbar li:hover {
   color: rgb(180, 197, 240);
   background-color: white;
-}
+} */
 
 .navbar a {
   text-decoration: none;
-  color: inherit;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+   color: rgb(180, 197, 240);
+  background-color: white;
+}
+
+.navbar .active {
+  background-color: white;
+  color: rgb(180, 197, 240);
 }
 
 /* Home */

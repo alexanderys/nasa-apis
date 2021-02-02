@@ -1,5 +1,5 @@
 import {
-    Link
+    NavLink
 } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShareAlt } from '@fortawesome/free-solid-svg-icons';
@@ -13,19 +13,19 @@ function Navbar() {
             <FontAwesomeIcon className="fontIcon" size="3x" icon={faShareAlt} />
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink activeClassName="active" exact to="/">Home</NavLink>
                 </li>
                 <li>
-                    <Link to="/apod">NASA APOD</Link>
+                    <NavLink activeClassName="active" to="/apod">NASA APOD</NavLink>
                 </li>
                 <li>
-                    <Link to="/search">Nasa Images</Link>
+                    <NavLink activeClassName="active" to="/search">Nasa Images</NavLink>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <NavLink activeClassName="active" to="/about">About</NavLink>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <NavLink activeClassName="active" to="/contact">Contact</NavLink>
                 </li>
             </ul>
         </nav>

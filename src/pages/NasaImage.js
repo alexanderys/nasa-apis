@@ -27,20 +27,20 @@ function NasaImage() {
         setSearchTerm('');
     }
 
-    useEffect(() => {
-        console.log('useEffect');
-        setImageObj({ isLoading: true })
-        fetch(URL)
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                } else {
-                    throw new Error('Something went wrong...');
-                }
-            })
-            .then(data => setImageObj({ data: data, isLoading: false }))
-            .catch(error => setImageObj({ error, isLoading: false }))
-    }, [submitted]);
+    /*     useEffect(() => {
+            console.log('useEffect');
+            setImageObj({ isLoading: true })
+            fetch(URL)
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error('Something went wrong...');
+                    }
+                })
+                .then(data => setImageObj({ data: data, isLoading: false }))
+                .catch(error => setImageObj({ error, isLoading: false }))
+        }, [submitted]); */
 
     return (
         <div className="image-search">
