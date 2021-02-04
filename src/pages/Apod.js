@@ -8,7 +8,7 @@ function Apod() {
     const [imageObj, setImageObj] = useState({ data: {}, isLoading: false, error: null });
 
     useEffect(() => {
-        console.log('useEffect')
+        console.log('useEffect');
         setImageObj({ isLoading: true })
         fetch(URL)
             .then(response => {
